@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimas Pert15</title>
+</head>
+<body>
+
+  <h2>Formulir Informasi Pengguna</h2>
+
+  <script>
+    // Menggunakan prompt untuk mendapatkan nama pengguna
+    var userName = window.prompt("Masukkan nama Anda:");
+
+    // Menggunakan confirm untuk mengonfirmasi nama pengguna
+    var userConfirmation = window.confirm("Apakah '" + userName + "' benar nama Anda?");
+
+    if (userConfirmation) {
+      // Menampilkan alert dengan informasi pengguna
+      window.alert("Terima kasih, " + userName + "!\nInformasi Anda telah terkonfirmasi.");
+    } else {
+      // Menampilkan alert jika pengguna tidak mengonfirmasi
+      window.alert("Silakan masukkan informasi dengan benar.");
+    }
+  </script>
+
+  <!-- Formulir HTML sebagai contoh tambahan -->
+  <h2>Formulir HTML</h2>
+  <form>
+    <label for="fname">Nama Depan:</label>
+    <input type="text" id="fname" name="fname">
+    <br>
+    <label for="lname">Nama Belakang:</label>
+    <input type="text" id="lname" name="lname">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
